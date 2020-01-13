@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15C9A5EBF23686F5636E4461 /* Pods_AlexGithubTestApp_AlexGithubTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD002CB35A64DBDDF8DF1800 /* Pods_AlexGithubTestApp_AlexGithubTestAppUITests.framework */; };
+		2613AF188D41690161CC62B8 /* Pods_AlexGithubTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1ADD63C0884C99497A9C7A2 /* Pods_AlexGithubTestAppTests.framework */; };
+		8B7437EAD3EB49A2790ABC6C /* Pods_AlexGithubTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5177D2B8FB3267AEB9A571 /* Pods_AlexGithubTestApp.framework */; };
 		FADB9B6C23CCD733006CF143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B6B23CCD733006CF143 /* AppDelegate.swift */; };
 		FADB9B6E23CCD733006CF143 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B6D23CCD733006CF143 /* SceneDelegate.swift */; };
 		FADB9B7023CCD733006CF143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B6F23CCD733006CF143 /* ViewController.swift */; };
@@ -15,6 +18,14 @@
 		FADB9B7823CCD737006CF143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB9B7623CCD737006CF143 /* LaunchScreen.storyboard */; };
 		FADB9B8323CCD737006CF143 /* AlexGithubTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B8223CCD737006CF143 /* AlexGithubTestAppTests.swift */; };
 		FADB9B8E23CCD737006CF143 /* AlexGithubTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B8D23CCD737006CF143 /* AlexGithubTestAppUITests.swift */; };
+		FADB9B9D23CCE83A006CF143 /* URL+GithubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B9C23CCE83A006CF143 /* URL+GithubApp.swift */; };
+		FADB9B9F23CCEDB0006CF143 /* Notification+GithubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B9E23CCEDB0006CF143 /* Notification+GithubApp.swift */; };
+		FADB9BA223CCEE7D006CF143 /* DeeplinkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BA123CCEE7D006CF143 /* DeeplinkCoordinator.swift */; };
+		FADB9BA423CCEFDE006CF143 /* GithubOAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BA323CCEFDE006CF143 /* GithubOAuthManager.swift */; };
+		FADB9BA823CCF233006CF143 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BA723CCF233006CF143 /* LoginInteractor.swift */; };
+		FADB9BAB23CCF3E7006CF143 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BAA23CCF3E7006CF143 /* NetworkManager.swift */; };
+		FADB9BAE23CCF5C5006CF143 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BAD23CCF5C5006CF143 /* Endpoint.swift */; };
+		FADB9BB023CCF65A006CF143 /* AlamofireNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BAF23CCF65A006CF143 /* AlamofireNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02DACD6D349ED21AF445D23F /* Pods-AlexGithubTestApp-AlexGithubTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexGithubTestApp-AlexGithubTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-AlexGithubTestApp-AlexGithubTestAppUITests/Pods-AlexGithubTestApp-AlexGithubTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		135990732FB44911CC899994 /* Pods-AlexGithubTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexGithubTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-AlexGithubTestAppTests/Pods-AlexGithubTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FF3772BBD5153F613128F53 /* Pods-AlexGithubTestApp-AlexGithubTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexGithubTestApp-AlexGithubTestAppUITests.release.xcconfig"; path = "Target Support Files/Pods-AlexGithubTestApp-AlexGithubTestAppUITests/Pods-AlexGithubTestApp-AlexGithubTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4659923C6ADF9524571E8D97 /* Pods-AlexGithubTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexGithubTestApp.debug.xcconfig"; path = "Target Support Files/Pods-AlexGithubTestApp/Pods-AlexGithubTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		75B89685A3FAB0910908A39F /* Pods-AlexGithubTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexGithubTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-AlexGithubTestAppTests/Pods-AlexGithubTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B5177D2B8FB3267AEB9A571 /* Pods_AlexGithubTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlexGithubTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD002CB35A64DBDDF8DF1800 /* Pods_AlexGithubTestApp_AlexGithubTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlexGithubTestApp_AlexGithubTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1ADD63C0884C99497A9C7A2 /* Pods_AlexGithubTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlexGithubTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB9B6823CCD733006CF143 /* AlexGithubTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexGithubTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB9B6B23CCD733006CF143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADB9B6D23CCD733006CF143 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,15 @@
 		FADB9B8923CCD737006CF143 /* AlexGithubTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlexGithubTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADB9B8D23CCD737006CF143 /* AlexGithubTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexGithubTestAppUITests.swift; sourceTree = "<group>"; };
 		FADB9B8F23CCD737006CF143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADB9B9C23CCE83A006CF143 /* URL+GithubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+GithubApp.swift"; sourceTree = "<group>"; };
+		FADB9B9E23CCEDB0006CF143 /* Notification+GithubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+GithubApp.swift"; sourceTree = "<group>"; };
+		FADB9BA123CCEE7D006CF143 /* DeeplinkCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkCoordinator.swift; sourceTree = "<group>"; };
+		FADB9BA323CCEFDE006CF143 /* GithubOAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubOAuthManager.swift; sourceTree = "<group>"; };
+		FADB9BA723CCF233006CF143 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		FADB9BAA23CCF3E7006CF143 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FADB9BAD23CCF5C5006CF143 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		FADB9BAF23CCF65A006CF143 /* AlamofireNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkManager.swift; sourceTree = "<group>"; };
+		FF1B51AA803263914615E680 /* Pods-AlexGithubTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexGithubTestApp.release.xcconfig"; path = "Target Support Files/Pods-AlexGithubTestApp/Pods-AlexGithubTestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7437EAD3EB49A2790ABC6C /* Pods_AlexGithubTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2613AF188D41690161CC62B8 /* Pods_AlexGithubTestAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C9A5EBF23686F5636E4461 /* Pods_AlexGithubTestApp_AlexGithubTestAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE66CF34D42BD72769376A9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B5177D2B8FB3267AEB9A571 /* Pods_AlexGithubTestApp.framework */,
+				BD002CB35A64DBDDF8DF1800 /* Pods_AlexGithubTestApp_AlexGithubTestAppUITests.framework */,
+				D1ADD63C0884C99497A9C7A2 /* Pods_AlexGithubTestAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFC07447D6DCCC1A9E2AD2D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4659923C6ADF9524571E8D97 /* Pods-AlexGithubTestApp.debug.xcconfig */,
+				FF1B51AA803263914615E680 /* Pods-AlexGithubTestApp.release.xcconfig */,
+				02DACD6D349ED21AF445D23F /* Pods-AlexGithubTestApp-AlexGithubTestAppUITests.debug.xcconfig */,
+				2FF3772BBD5153F613128F53 /* Pods-AlexGithubTestApp-AlexGithubTestAppUITests.release.xcconfig */,
+				135990732FB44911CC899994 /* Pods-AlexGithubTestAppTests.debug.xcconfig */,
+				75B89685A3FAB0910908A39F /* Pods-AlexGithubTestAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FADB9B5F23CCD733006CF143 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +138,8 @@
 				FADB9B8123CCD737006CF143 /* AlexGithubTestAppTests */,
 				FADB9B8C23CCD737006CF143 /* AlexGithubTestAppUITests */,
 				FADB9B6923CCD733006CF143 /* Products */,
+				EFC07447D6DCCC1A9E2AD2D1 /* Pods */,
+				AE66CF34D42BD72769376A9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +156,11 @@
 		FADB9B6A23CCD733006CF143 /* AlexGithubTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				FADB9BAC23CCF5B9006CF143 /* Data Types */,
+				FADB9BA923CCF3D3006CF143 /* Network Manager */,
+				FADB9BA523CCF218006CF143 /* Modules */,
+				FADB9BA023CCEE6D006CF143 /* Shared Logic */,
+				FADB9B9B23CCE826006CF143 /* Extensions */,
 				FADB9B6B23CCD733006CF143 /* AppDelegate.swift */,
 				FADB9B6D23CCD733006CF143 /* SceneDelegate.swift */,
 				FADB9B6F23CCD733006CF143 /* ViewController.swift */,
@@ -128,6 +190,57 @@
 			path = AlexGithubTestAppUITests;
 			sourceTree = "<group>";
 		};
+		FADB9B9B23CCE826006CF143 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FADB9B9C23CCE83A006CF143 /* URL+GithubApp.swift */,
+				FADB9B9E23CCEDB0006CF143 /* Notification+GithubApp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FADB9BA023CCEE6D006CF143 /* Shared Logic */ = {
+			isa = PBXGroup;
+			children = (
+				FADB9BA123CCEE7D006CF143 /* DeeplinkCoordinator.swift */,
+				FADB9BA323CCEFDE006CF143 /* GithubOAuthManager.swift */,
+			);
+			path = "Shared Logic";
+			sourceTree = "<group>";
+		};
+		FADB9BA523CCF218006CF143 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FADB9BA623CCF220006CF143 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FADB9BA623CCF220006CF143 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FADB9BA723CCF233006CF143 /* LoginInteractor.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FADB9BA923CCF3D3006CF143 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FADB9BAA23CCF3E7006CF143 /* NetworkManager.swift */,
+				FADB9BAF23CCF65A006CF143 /* AlamofireNetworkManager.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		FADB9BAC23CCF5B9006CF143 /* Data Types */ = {
+			isa = PBXGroup;
+			children = (
+				FADB9BAD23CCF5C5006CF143 /* Endpoint.swift */,
+			);
+			path = "Data Types";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADB9B9223CCD737006CF143 /* Build configuration list for PBXNativeTarget "AlexGithubTestApp" */;
 			buildPhases = (
+				46AF2123370A225792E13892 /* [CP] Check Pods Manifest.lock */,
 				FADB9B6423CCD733006CF143 /* Sources */,
 				FADB9B6523CCD733006CF143 /* Frameworks */,
 				FADB9B6623CCD733006CF143 /* Resources */,
+				8DBD3D66B79587FFD6E57D9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +267,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADB9B9523CCD737006CF143 /* Build configuration list for PBXNativeTarget "AlexGithubTestAppTests" */;
 			buildPhases = (
+				F5FBDAD415FFB8838B5C738F /* [CP] Check Pods Manifest.lock */,
 				FADB9B7A23CCD737006CF143 /* Sources */,
 				FADB9B7B23CCD737006CF143 /* Frameworks */,
 				FADB9B7C23CCD737006CF143 /* Resources */,
@@ -170,9 +286,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FADB9B9823CCD737006CF143 /* Build configuration list for PBXNativeTarget "AlexGithubTestAppUITests" */;
 			buildPhases = (
+				0EACE3AFC01965E6AAB0A92C /* [CP] Check Pods Manifest.lock */,
 				FADB9B8523CCD737006CF143 /* Sources */,
 				FADB9B8623CCD737006CF143 /* Frameworks */,
 				FADB9B8723CCD737006CF143 /* Resources */,
+				F8F696EEBC328A697E4BADE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +372,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EACE3AFC01965E6AAB0A92C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlexGithubTestApp-AlexGithubTestAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46AF2123370A225792E13892 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlexGithubTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DBD3D66B79587FFD6E57D9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlexGithubTestApp/Pods-AlexGithubTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlexGithubTestApp/Pods-AlexGithubTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlexGithubTestApp/Pods-AlexGithubTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5FBDAD415FFB8838B5C738F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlexGithubTestAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F696EEBC328A697E4BADE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlexGithubTestApp-AlexGithubTestAppUITests/Pods-AlexGithubTestApp-AlexGithubTestAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlexGithubTestApp-AlexGithubTestAppUITests/Pods-AlexGithubTestApp-AlexGithubTestAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlexGithubTestApp-AlexGithubTestAppUITests/Pods-AlexGithubTestApp-AlexGithubTestAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FADB9B6423CCD733006CF143 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADB9BB023CCF65A006CF143 /* AlamofireNetworkManager.swift in Sources */,
+				FADB9BAB23CCF3E7006CF143 /* NetworkManager.swift in Sources */,
+				FADB9BA223CCEE7D006CF143 /* DeeplinkCoordinator.swift in Sources */,
+				FADB9B9D23CCE83A006CF143 /* URL+GithubApp.swift in Sources */,
 				FADB9B7023CCD733006CF143 /* ViewController.swift in Sources */,
+				FADB9BAE23CCF5C5006CF143 /* Endpoint.swift in Sources */,
 				FADB9B6C23CCD733006CF143 /* AppDelegate.swift in Sources */,
+				FADB9BA823CCF233006CF143 /* LoginInteractor.swift in Sources */,
 				FADB9B6E23CCD733006CF143 /* SceneDelegate.swift in Sources */,
+				FADB9BA423CCEFDE006CF143 /* GithubOAuthManager.swift in Sources */,
+				FADB9B9F23CCEDB0006CF143 /* Notification+GithubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +661,7 @@
 		};
 		FADB9B9323CCD737006CF143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4659923C6ADF9524571E8D97 /* Pods-AlexGithubTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +679,7 @@
 		};
 		FADB9B9423CCD737006CF143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1B51AA803263914615E680 /* Pods-AlexGithubTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +697,7 @@
 		};
 		FADB9B9623CCD737006CF143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135990732FB44911CC899994 /* Pods-AlexGithubTestAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +719,7 @@
 		};
 		FADB9B9723CCD737006CF143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B89685A3FAB0910908A39F /* Pods-AlexGithubTestAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +741,7 @@
 		};
 		FADB9B9923CCD737006CF143 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02DACD6D349ED21AF445D23F /* Pods-AlexGithubTestApp-AlexGithubTestAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +761,7 @@
 		};
 		FADB9B9A23CCD737006CF143 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FF3772BBD5153F613128F53 /* Pods-AlexGithubTestApp-AlexGithubTestAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
