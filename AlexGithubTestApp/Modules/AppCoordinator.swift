@@ -11,8 +11,8 @@ import UIKit
 
 class AppCoordinator {
     
-    private let networkManager: NetworkManager =
-        AlamofireNetworkManager(baseURL: URL(string: "https://api.github.com")!)
+    private lazy var networkManager = AlamofireNetworkManager(baseURL: URL(string: "https://api.github.com")!)
+    private lazy var dataStoresFactory = DataStoresFactory(networkManager: self.networkManager)
     
     private let navigationController: UINavigationController
     
@@ -21,6 +21,9 @@ class AppCoordinator {
     }
     
     func start() {
+        // Here we could keep the user logged in, for example by checking to see if the authToken is already set on Keychain
+        // but because this is not in the requirements for this POC we are skipping it and asking the user to log in every
+        // time they open the app.
         self.startLogin()
     }
     
@@ -36,6 +39,14 @@ class AppCoordinator {
                                 actionsResponder: self,
                                 storyboard: loginStoryboard)
     }
+    
+    private func moveToRepoList() {
+        let repoStoryboard = UIStoryboard(name: "RepoStoryboard", bundle: nil)
+        
+        ReposListConfigurator.start(using: self.navigationController,
+                                    dataStore: self.dataStoresFactory.makeRepoDataStore(),
+                                    storyboard: repoStoryboard)
+    }
 }
 
 //MARK: - LoginActionsResponder
@@ -43,6 +54,6 @@ class AppCoordinator {
 extension AppCoordinator: LoginActionsResponder {
     
     func loginSuccesfull() {
-        
+        self.moveToRepoList()
     }
 }

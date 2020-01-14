@@ -24,9 +24,6 @@ extension URLRequest {
         
         self = URLRequest(url: requestURL)
         
-        // -- Method
-        self.httpMethod = endpoint.method.rawValue
-        
         // -- Headers
         endpoint.headers?.forEach {
             self.addValue($1, forHTTPHeaderField: $0)
@@ -51,5 +48,8 @@ extension URLRequest {
             
         default: break
         }
+        
+        // -- Method
+        self.httpMethod = endpoint.method.rawValue
     }
 }

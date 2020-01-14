@@ -17,7 +17,7 @@ protocol LoginActionsResponder: class {
 }
 
 class _LoginInteractor {
-    private let view: LoginView?
+    private weak var view: LoginView?
     private let oauthManager: GithubOAuthManager
     private weak var actionsResponder: LoginActionsResponder?
     

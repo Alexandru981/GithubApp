@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Repos List View Controller-->
+        <scene sceneID="cHH-kv-k6h">
+            <objects>
+                <viewController storyboardIdentifier="ReposListViewController" id="kVd-4Q-VSX" customClass="ReposListViewController" customModule="AlexGithubTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JN8-rv-Yuj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oTu-gr-vqH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="oeW-4e-5tU">
+                                <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xfu-MN-6SG" firstAttribute="bottom" secondItem="oTu-gr-vqH" secondAttribute="bottom" id="GlO-Hj-6c6"/>
+                            <constraint firstItem="oTu-gr-vqH" firstAttribute="top" secondItem="Xfu-MN-6SG" secondAttribute="top" id="LaA-HX-4aH"/>
+                            <constraint firstItem="oeW-4e-5tU" firstAttribute="centerY" secondItem="Xfu-MN-6SG" secondAttribute="centerY" id="QNO-cU-qxw"/>
+                            <constraint firstItem="oeW-4e-5tU" firstAttribute="centerX" secondItem="Xfu-MN-6SG" secondAttribute="centerX" id="cSO-0y-DcS"/>
+                            <constraint firstItem="Xfu-MN-6SG" firstAttribute="trailing" secondItem="oTu-gr-vqH" secondAttribute="trailing" id="lDM-ho-s1g"/>
+                            <constraint firstItem="oTu-gr-vqH" firstAttribute="leading" secondItem="Xfu-MN-6SG" secondAttribute="leading" id="pMg-Ld-DxH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xfu-MN-6SG"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="oeW-4e-5tU" id="wa2-i5-3PK"/>
+                        <outlet property="tableView" destination="oTu-gr-vqH" id="AwH-5n-dcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZj-NF-NRV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-816" y="-2"/>
+        </scene>
+    </scenes>
+</document>

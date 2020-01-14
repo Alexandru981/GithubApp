@@ -8,6 +8,7 @@ target 'AlexGithubTestApp' do
   # Pods for AlexGithubTestApp
   pod 'Alamofire'
   pod 'SwiftKeychainWrapper'
+  pod 'AlamofireImage'
 
   target 'AlexGithubTestAppTests' do
     inherit! :search_paths
