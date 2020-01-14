@@ -20,12 +20,12 @@ enum Parameters {
 
 typealias HTTPHeaders = [String: String]
 
-enum HTTPMethod: CaseIterable {
-    case get
-    case post
-    case delete
-    case patch
-    case put
+enum HTTPMethod: String {
+    case get = "GET"
+    case post = "POST"
+    case delete = "DELETE"
+    case patch = "PATCH"
+    case put = "PUT"
 }
 
 struct Endpoint {

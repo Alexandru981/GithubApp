@@ -12,11 +12,19 @@ protocol LoginInteractor: class {
     func logIn()
 }
 
+protocol LoginActionsResponder: class {
+    func loginSuccesfull()
+}
+
 class _LoginInteractor {
+    private let view: LoginView?
     private let oauthManager: GithubOAuthManager
+    private weak var actionsResponder: LoginActionsResponder?
     
-    init(oauthManager: GithubOAuthManager) {
+    init(view: LoginView, oauthManager: GithubOAuthManager, actionsResponder: LoginActionsResponder?) {
+        self.view = view
         self.oauthManager = oauthManager
+        self.actionsResponder = actionsResponder
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.logInSuccessful(notif:)),
@@ -29,15 +37,22 @@ class _LoginInteractor {
     }
     
     @objc private func logInSuccessful(notif: Notification) {
-        guard let code = notif.userInfo?["code"] else { return }
+        guard let code = notif.userInfo?["code"] as? String else { return }
         
-        //TODO:
+        self.oauthManager.logIn(using: code) { [weak self] error in
+            if let error = error {
+                self?.view?.present(error: error)
+                return
+            }
+            
+            self?.actionsResponder?.loginSuccesfull()
+        }
     }
 }
 
 extension _LoginInteractor: LoginInteractor {
     
     func logIn() {
-        oauthManager.startOAuth()
+        self.oauthManager.startOAuth()
     }
 }

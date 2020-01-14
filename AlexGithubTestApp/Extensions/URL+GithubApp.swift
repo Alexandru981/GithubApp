@@ -9,6 +9,7 @@
 import Foundation
 
 extension URL {
+
     func getQueryParameters() -> [String: String]? {
         guard let keyValuePairs: [(String, String)] = URLComponents(url: self, resolvingAgainstBaseURL: false)?
             .queryItems?
@@ -22,3 +23,4 @@ extension URL {
         return Dictionary(uniqueKeysWithValues: keyValuePairs)
     }
 }
+

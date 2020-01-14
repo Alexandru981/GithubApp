@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		FADB9B6C23CCD733006CF143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B6B23CCD733006CF143 /* AppDelegate.swift */; };
 		FADB9B6E23CCD733006CF143 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B6D23CCD733006CF143 /* SceneDelegate.swift */; };
 		FADB9B7023CCD733006CF143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B6F23CCD733006CF143 /* ViewController.swift */; };
-		FADB9B7323CCD733006CF143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB9B7123CCD733006CF143 /* Main.storyboard */; };
+		FADB9B7323CCD733006CF143 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB9B7123CCD733006CF143 /* LoginStoryboard.storyboard */; };
 		FADB9B7523CCD737006CF143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADB9B7423CCD737006CF143 /* Assets.xcassets */; };
 		FADB9B7823CCD737006CF143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADB9B7623CCD737006CF143 /* LaunchScreen.storyboard */; };
 		FADB9B8323CCD737006CF143 /* AlexGithubTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9B8223CCD737006CF143 /* AlexGithubTestAppTests.swift */; };
@@ -26,6 +26,16 @@
 		FADB9BAB23CCF3E7006CF143 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BAA23CCF3E7006CF143 /* NetworkManager.swift */; };
 		FADB9BAE23CCF5C5006CF143 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BAD23CCF5C5006CF143 /* Endpoint.swift */; };
 		FADB9BB023CCF65A006CF143 /* AlamofireNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BAF23CCF65A006CF143 /* AlamofireNetworkManager.swift */; };
+		FADB9BB223CDB17F006CF143 /* URLRequest+GithubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BB123CDB17F006CF143 /* URLRequest+GithubApp.swift */; };
+		FADB9BB423CDB74E006CF143 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BB323CDB74E006CF143 /* Keychain.swift */; };
+		FADB9BB723CDBC07006CF143 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BB623CDBC07006CF143 /* API.swift */; };
+		FADB9BB923CDBC14006CF143 /* API+Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BB823CDBC14006CF143 /* API+Authorization.swift */; };
+		FADB9BBB23CDBE36006CF143 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BBA23CDBE36006CF143 /* AppCoordinator.swift */; };
+		FADB9BBD23CDBED8006CF143 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BBC23CDBED8006CF143 /* LoginConfigurator.swift */; };
+		FADB9BC023CDC0CF006CF143 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BBF23CDC0CF006CF143 /* LoginViewController.swift */; };
+		FADB9BC223CDC1B9006CF143 /* UIStoryboard+GithubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BC123CDC1B9006CF143 /* UIStoryboard+GithubApp.swift */; };
+		FADB9BC423CDC207006CF143 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BC323CDC207006CF143 /* Identifiable.swift */; };
+		FADB9BC623CDC24C006CF143 /* UIViewController+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB9BC523CDC24C006CF143 /* UIViewController+Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +68,7 @@
 		FADB9B6B23CCD733006CF143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADB9B6D23CCD733006CF143 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FADB9B6F23CCD733006CF143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FADB9B7223CCD733006CF143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FADB9B7223CCD733006CF143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		FADB9B7423CCD737006CF143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADB9B7723CCD737006CF143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADB9B7923CCD737006CF143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +86,16 @@
 		FADB9BAA23CCF3E7006CF143 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FADB9BAD23CCF5C5006CF143 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		FADB9BAF23CCF65A006CF143 /* AlamofireNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkManager.swift; sourceTree = "<group>"; };
+		FADB9BB123CDB17F006CF143 /* URLRequest+GithubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+GithubApp.swift"; sourceTree = "<group>"; };
+		FADB9BB323CDB74E006CF143 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		FADB9BB623CDBC07006CF143 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FADB9BB823CDBC14006CF143 /* API+Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Authorization.swift"; sourceTree = "<group>"; };
+		FADB9BBA23CDBE36006CF143 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FADB9BBC23CDBED8006CF143 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		FADB9BBF23CDC0CF006CF143 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FADB9BC123CDC1B9006CF143 /* UIStoryboard+GithubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+GithubApp.swift"; sourceTree = "<group>"; };
+		FADB9BC323CDC207006CF143 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		FADB9BC523CDC24C006CF143 /* UIViewController+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Identifiable.swift"; sourceTree = "<group>"; };
 		FF1B51AA803263914615E680 /* Pods-AlexGithubTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexGithubTestApp.release.xcconfig"; path = "Target Support Files/Pods-AlexGithubTestApp/Pods-AlexGithubTestApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +147,6 @@
 				135990732FB44911CC899994 /* Pods-AlexGithubTestAppTests.debug.xcconfig */,
 				75B89685A3FAB0910908A39F /* Pods-AlexGithubTestAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -156,6 +175,8 @@
 		FADB9B6A23CCD733006CF143 /* AlexGithubTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				FADB9BC723CDC5CE006CF143 /* Storyboards */,
+				FADB9BB523CDBBFA006CF143 /* API */,
 				FADB9BAC23CCF5B9006CF143 /* Data Types */,
 				FADB9BA923CCF3D3006CF143 /* Network Manager */,
 				FADB9BA523CCF218006CF143 /* Modules */,
@@ -164,7 +185,6 @@
 				FADB9B6B23CCD733006CF143 /* AppDelegate.swift */,
 				FADB9B6D23CCD733006CF143 /* SceneDelegate.swift */,
 				FADB9B6F23CCD733006CF143 /* ViewController.swift */,
-				FADB9B7123CCD733006CF143 /* Main.storyboard */,
 				FADB9B7423CCD737006CF143 /* Assets.xcassets */,
 				FADB9B7623CCD737006CF143 /* LaunchScreen.storyboard */,
 				FADB9B7923CCD737006CF143 /* Info.plist */,
@@ -195,6 +215,9 @@
 			children = (
 				FADB9B9C23CCE83A006CF143 /* URL+GithubApp.swift */,
 				FADB9B9E23CCEDB0006CF143 /* Notification+GithubApp.swift */,
+				FADB9BB123CDB17F006CF143 /* URLRequest+GithubApp.swift */,
+				FADB9BC123CDC1B9006CF143 /* UIStoryboard+GithubApp.swift */,
+				FADB9BC523CDC24C006CF143 /* UIViewController+Identifiable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,6 +234,7 @@
 		FADB9BA523CCF218006CF143 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FADB9BBA23CDBE36006CF143 /* AppCoordinator.swift */,
 				FADB9BA623CCF220006CF143 /* Login */,
 			);
 			path = Modules;
@@ -220,6 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				FADB9BA723CCF233006CF143 /* LoginInteractor.swift */,
+				FADB9BBC23CDBED8006CF143 /* LoginConfigurator.swift */,
+				FADB9BBF23CDC0CF006CF143 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -237,8 +263,27 @@
 			isa = PBXGroup;
 			children = (
 				FADB9BAD23CCF5C5006CF143 /* Endpoint.swift */,
+				FADB9BB323CDB74E006CF143 /* Keychain.swift */,
+				FADB9BC323CDC207006CF143 /* Identifiable.swift */,
 			);
 			path = "Data Types";
+			sourceTree = "<group>";
+		};
+		FADB9BB523CDBBFA006CF143 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FADB9BB623CDBC07006CF143 /* API.swift */,
+				FADB9BB823CDBC14006CF143 /* API+Authorization.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FADB9BC723CDC5CE006CF143 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FADB9B7123CCD733006CF143 /* LoginStoryboard.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +397,7 @@
 			files = (
 				FADB9B7823CCD737006CF143 /* LaunchScreen.storyboard in Resources */,
 				FADB9B7523CCD737006CF143 /* Assets.xcassets in Resources */,
-				FADB9B7323CCD733006CF143 /* Main.storyboard in Resources */,
+				FADB9B7323CCD733006CF143 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,17 +525,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADB9BC023CDC0CF006CF143 /* LoginViewController.swift in Sources */,
+				FADB9BBD23CDBED8006CF143 /* LoginConfigurator.swift in Sources */,
 				FADB9BB023CCF65A006CF143 /* AlamofireNetworkManager.swift in Sources */,
 				FADB9BAB23CCF3E7006CF143 /* NetworkManager.swift in Sources */,
+				FADB9BB423CDB74E006CF143 /* Keychain.swift in Sources */,
 				FADB9BA223CCEE7D006CF143 /* DeeplinkCoordinator.swift in Sources */,
+				FADB9BBB23CDBE36006CF143 /* AppCoordinator.swift in Sources */,
 				FADB9B9D23CCE83A006CF143 /* URL+GithubApp.swift in Sources */,
 				FADB9B7023CCD733006CF143 /* ViewController.swift in Sources */,
+				FADB9BB723CDBC07006CF143 /* API.swift in Sources */,
 				FADB9BAE23CCF5C5006CF143 /* Endpoint.swift in Sources */,
 				FADB9B6C23CCD733006CF143 /* AppDelegate.swift in Sources */,
+				FADB9BB923CDBC14006CF143 /* API+Authorization.swift in Sources */,
+				FADB9BC423CDC207006CF143 /* Identifiable.swift in Sources */,
 				FADB9BA823CCF233006CF143 /* LoginInteractor.swift in Sources */,
+				FADB9BB223CDB17F006CF143 /* URLRequest+GithubApp.swift in Sources */,
 				FADB9B6E23CCD733006CF143 /* SceneDelegate.swift in Sources */,
+				FADB9BC623CDC24C006CF143 /* UIViewController+Identifiable.swift in Sources */,
 				FADB9BA423CCEFDE006CF143 /* GithubOAuthManager.swift in Sources */,
 				FADB9B9F23CCEDB0006CF143 /* Notification+GithubApp.swift in Sources */,
+				FADB9BC223CDC1B9006CF143 /* UIStoryboard+GithubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,12 +581,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FADB9B7123CCD733006CF143 /* Main.storyboard */ = {
+		FADB9B7123CCD733006CF143 /* LoginStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FADB9B7223CCD733006CF143 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LoginStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		FADB9B7623CCD737006CF143 /* LaunchScreen.storyboard */ = {

@@ -22,13 +22,13 @@ class ViewController: UIViewController {
     
     @IBAction func didTapLogin(_ sender: Any) {
         
-        guard let url = URL(string: "https://github.com/login/oauth/authorize?scope=repo&client_id=\(kClientID)") else {
-            return
-        }
-        
-        guard UIApplication.shared.canOpenURL(url) else { return }
-        
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//        guard let url = URL(string: "https://github.com/login/oauth/authorize?scope=repo&client_id=\(kClientID)") else {
+//            return
+//        }
+//
+//        guard UIApplication.shared.canOpenURL(url) else { return }
+//
+//        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
     @objc func didSucceed(notif: Notification) {
